@@ -1,0 +1,201 @@
+body, html {
+    font-family: 'Yusei Magic', sans-serif;
+    color: #f15bb5;
+     margin: 0;
+
+}
+
+* {box-sizing:border-box;}
+
+
+a:link {
+    color: #f15bb5;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f15bb5;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+
+ }
+
+
+ .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0;
+    width: 90vw;
+    height: 90vh;
+
+
+ }
+
+
+.container-account {
+display: flex;
+align-items: center;
+flex-direction: column;
+height: 100%;
+padding: 0px;
+margin: 0px;
+margin-top: 30px;
+
+
+}
+
+
+.word {
+    color: #343a40;
+    font-size: 1rem;
+    margin-top: 40px;
+    font-weight: normal;
+
+}
+
+.container-form {
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+
+    margin-top:20px;
+    padding: 0px;    
+}
+
+.field {
+    min-width: 450px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    border: 2px solid #d8e2dc;
+    font-family: inherit;
+    font-size: 1rem;    
+    display: flex;
+
+}
+
+input[type=text]:focus {
+    border: 2px solid #f15bb5;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border: 2px solid #f15bb5;
+    outline: none;
+}
+
+input[type=password]:focus {
+    border: 2px solid #f15bb5;
+    outline: none;
+}
+
+
+::placeholder {
+    color:#ced4da;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#ced4da;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ced4da;
+  }
+
+
+.check {
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #343a40;
+
+    min-width: 450px;
+
+}
+
+
+.card_button {
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 45px;
+    min-width: 150px;
+    margin: 0.5rem;
+    flex-grow: 1;
+
+}
+
+
+/*disabled assigned in html in form attribute
+which will disable the button to be clicked
+but if want the button to grey out completely 
+when buttons are styled, add the below disabled */
+
+.card_button-primary:disabled {
+    background: #f15bb5;
+     color: white;
+}
+
+.card_button-secondary {
+    background: #f15bb5;
+  color: white;
+}
+
+
+.container-picture {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content:center;
+    max-width: 600px;
+    height: 100%;
+    /*Set container picture to a max-width of whatever size you want
+    Keeps original size and scales down, doesnt go larger in size when
+    you stretch browser wide, no scroll 
+    Then give a max-width of 100% / height auto to picture below so that
+    it grows to fit 100% into the container.
+    */
+}
+
+.picture {
+    border-radius: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: left;
+    font-size: 0.5rem;
+    padding: 0px;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px)
+{
+    .container, .outer {
+        display: flex;
+        flex-direction: column-reverse;
+        flex: 1 1 100%;
+        height: auto;
+        width: 100%;
+    }
+} 
